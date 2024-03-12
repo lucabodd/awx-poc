@@ -1,0 +1,6 @@
+{
+    "ansible.python.interpreterPath": "/usr/local/bin/python3",
+    "python.analysis.extraPaths": [
+        "./repo/mail-html-generator"
+    ]
+}

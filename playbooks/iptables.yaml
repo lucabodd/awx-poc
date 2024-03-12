@@ -1,0 +1,7 @@
+---
+- name: Block specific IP
+  ansible.builtin.iptables:
+    chain: INPUT
+    source: 185.157.6.106
+    jump: DROP
+  become: yes
