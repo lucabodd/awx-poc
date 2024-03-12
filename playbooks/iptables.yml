@@ -1,7 +1,10 @@
 ---
-- name: Block specific IP
-  ansible.builtin.iptables:
-    chain: INPUT
-    source: 185.157.6.106
-    jump: DROP
-  become: yes
+- hosts: all
+  become: true
+  tasks:
+  - name: Block specific IP
+    iptables:
+      chain: INPUT
+      source: 185.157.6.106
+      jump: DROP
+    become: yes
